@@ -9,7 +9,6 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
-    - [](#)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -66,8 +65,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-### []()
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -118,6 +115,7 @@ git https://github.com/edenlisk/morse-code-decoder.git
   
 # 🔭 Future Features:
 - Add more advanced Ruby functions.
+- Build wonderful UI.
 
 
 # 🤝 Contributing:
