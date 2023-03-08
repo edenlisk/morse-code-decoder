@@ -1,12 +1,7 @@
 def decode_char(encoded_char)
   morse_characters = { 'ALFA' => '.-', 'BRAVO' => '-...', 'CHARLIE' => '-.-.', 'DELTA' => '-..', 'ECHO' => '.',
-                       'FOXTROT' => '..-.',
-                       'GOLF' => '--.',
-                       'HOTEL' => '....',
-                       'INDIA' => '..',
-                       'JULIET' => '.---',
-                       'kILO' => '-.-',
-                       'LIMA' => '.-..',
+                       'FOXTROT' => '..-.', 'GOLF' => '--.', 'HOTEL' => '....', 'INDIA' => '..', 'JULIET' => '.---',
+                       'kILO' => '-.-', 'LIMA' => '.-..',
                        'MIKE' => '--',
                        'NOVEMBER' => '-.',
                        'OSCAR' => '---',
@@ -35,12 +30,12 @@ def decode_word(encoded_word)
   decoded_word
 end
 
-def decode_message(message) 
-  sentence = message.split(' ') 
-  decoded_message = '' 
-  sentence.each do |word| 
-    decoded_message += decode_word(word).concat(' ') 
-  end 
-  decoded_message 
-end 
-puts decode_message('.- -... --- -..- ..-. ..- .-.. .-.. --- ..-. .-. ..- -... .. . ...') 
+def decode_message(message)
+  sentence = message.split('  ')
+  decoded_message = ''
+  sentence.each do |word|
+    decoded_message += decode_word(word).concat(' ')
+  end
+  decoded_message
+end
+puts decode_message('.- -... --- -..- ..-. ..- .-.. .-.. --- ..-. .-. ..- -... .. . ...')
