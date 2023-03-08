@@ -34,3 +34,13 @@ def decode_word(encoded_word)
   end
   decoded_word
 end
+
+def decode_message(message) 
+  sentence = message.split(' ') 
+  decoded_message = '' 
+  sentence.each do |word| 
+    decoded_message += decode_word(word).concat(' ') 
+  end 
+  decoded_message 
+end 
+puts decode_message('.- -... --- -..- ..-. ..- .-.. .-.. --- ..-. .-. ..- -... .. . ...') 
